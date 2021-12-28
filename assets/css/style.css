@@ -272,7 +272,7 @@ img {
   fill: var(--first-color);
 }
 .home__blob-image {
-  width: 170px;
+  width: 250px;
 }
 .home__data {
   grid-column: 1/3;
