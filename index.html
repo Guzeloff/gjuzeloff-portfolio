@@ -7,17 +7,22 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    
+
     <title>Gjuzel | OFF</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPJXKL0THH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LPJXKL0THH"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-LPJXKL0THH');
-</script>
+      gtag("config", "G-LPJXKL0THH");
+    </script>
     <link rel="icon" href="/assets/img/favicon.ico" type="image/ico" />
     <meta name="description" content="gjuzeloff" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -42,7 +47,7 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
+  <body id="body">
     <!--HEADER-->
     <header class="header" id="header">
       <nav class="nav container">
@@ -270,7 +275,7 @@
                     <span class="skills__percentage skills__react"></span>
                   </div>
                 </div>
-                 <div class="skills__data">
+                <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">Shopify</h3>
                     <span class="skills__number">70%</span>
@@ -456,10 +461,7 @@
               <h3 class="services__title">Website <br />Development</h3>
             </div>
             <span
-              class="
-                button button--flex button--small button--link
-                services__button
-              "
+              class="button button--flex button--small button--link services__button"
             >
               View more
               <i class="uil uil-arrow-right button__icon"></i>
@@ -496,10 +498,7 @@
               <h3 class="services__title">Digital<br />Marketing</h3>
             </div>
             <span
-              class="
-                button button--flex button--small button--link
-                services__button
-              "
+              class="button button--flex button--small button--link services__button"
             >
               View more
               <i class="uil uil-arrow-right button__icon"></i>
@@ -531,111 +530,49 @@
           </div>
         </div>
       </section>
-      <!--PORTFOLIO E-COMMERCE STORES-->
-       <section class="porftolio section" id="portfolio">
-        <h2 class="section__title">Portfolio | E-Commerce Stores</h2>
-        <span class="section__subtitle">Most recent works</span>
 
-        <div class="portfolio__container container swiper-container">
-          <div class="swiper-wrapper">
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/kenza-clothing.PNG"
-                alt="project1"
-                class="portfolio__img"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Kenza - Shopify E-commerce Store</h3>
-                <p class="portfolio__description">
-                  Women Clothing store
-                </p>
-                <a
-                  href="#"
-                  target="_blank"
-                >
-                  <span
-                    class="
-                      button button--flex button--small button--link
-                      services__button
-                    "
-                  >
-                    View more
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/bfit.jpg"
-                alt="project2"
-                class="portfolio__img"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Shopify - E-commerce store</h3>
-                <p class="portfolio__description">
-                 Women's Gym & Sport Leggings store
-                </p>
-                <a href="#">
-                  <span
-                    class="
-                      button button--flex button--small button--link
-                      services__button
-                    "
-                  >
-                    View more
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-             <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/dishes.JPG"
-                alt="project2"
-                class="portfolio__img"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Shopify - E-commerce store</h3>
-                <p class="portfolio__description">
-                 Modern online store for Plates, Bowls & Dishes
-                </p>
-                <a href="#">
-                  <span
-                    class="
-                      button button--flex button--small button--link
-                      services__button
-                    "
-                  >
-                    View more
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-next">
-            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-          </div>
-          <div class="swiper-button-prev">
-            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
       <!--PORTFOLIO-->
       <section class="porftolio section" id="portfolio">
         <h2 class="section__title">Portfolio | Web Development</h2>
         <span class="section__subtitle">Most recent works</span>
+        <span
+          class="section__subtitle"
+          style="font-style: italic; margin-top: 0"
+          >click on image to view</span
+        >
 
         <div class="portfolio__container container swiper-container">
           <div class="swiper-wrapper">
             <div class="portfolio__content grid swiper-slide">
               <img
-                src="assets/img/findtutor.JPG"
-                alt="project1"
+                src="assets/img/marketing-agencyv1.png"
+                alt="project4"
                 class="portfolio__img"
+                onclick="onClick(this)"
               />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Website Agency - HiDigital v2</h3>
+                <p class="portfolio__description">
+                  Modern website which is build for a digital marketing agency.
+                </p>
+                <a href="#" target="_blank">
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View on GitHub
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/findtutor.png"
+                alt="project1"
+                class="portfolio__img modal-hover-opacity"
+                onclick="onClick(this)"
+              />
+
               <div class="portfolio__data">
                 <h3 class="portfolio__title">Educational Web Platform</h3>
                 <p class="portfolio__description">
@@ -649,12 +586,9 @@
                   target="_blank"
                 >
                   <span
-                    class="
-                      button button--flex button--small button--link
-                      services__button
-                    "
+                    class="button button--flex button--small button--link services__button"
                   >
-                    View more
+                    View on GitHub
                     <i class="uil uil-arrow-right button__icon"></i>
                   </span>
                 </a>
@@ -662,71 +596,171 @@
             </div>
             <div class="portfolio__content grid swiper-slide">
               <img
-                src="assets/img/hidigital.JPG"
+                src="assets/img/godsofnileNFT.png"
                 alt="project2"
                 class="portfolio__img"
+                onclick="onClick(this)"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">NFT Project - Gods of Nile</h3>
+                <p class="portfolio__description">
+                  Frontend developed with ReactJS, website for upcoming cool NFT
+                  project on ETH blockchain.
+                </p>
+                <a href="#">
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View on GitHub
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/hidigital.png"
+                alt="project2"
+                class="portfolio__img"
+                onclick="onClick(this)"
               />
               <div class="portfolio__data">
                 <h3 class="portfolio__title">Website - HiDigital</h3>
                 <p class="portfolio__description">
                   Modern website which is build for a digital marketing agency.
                 </p>
-                <a href="#">
+                <a
+                  href="https://github.com/Guzeloff/MarketingAgency-Digitaless"
+                  target="_blank"
+                >
                   <span
-                    class="
-                      button button--flex button--small button--link
-                      services__button
-                    "
+                    class="button button--flex button--small button--link services__button"
                   >
-                    View more
+                    View on GitHub
                     <i class="uil uil-arrow-right button__icon"></i>
                   </span>
                 </a>
               </div>
             </div>
-             <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/beatrickalocal.JPG"
-                alt="project2"
-                class="portfolio__img"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Website - Beatricka Restaurant</h3>
-                <p class="portfolio__description">
-                  Modern website which is build for a local restaurant.
-                </p>
-                <a href="#">
-                  <span
-                    class="
-                      button button--flex button--small button--link
-                      services__button
-                    "
-                  >
-                    View more
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
+
             <div class="portfolio__content grid swiper-slide">
               <img
-                src="assets/img/oglasi.JPG"
+                src="assets/img/angrywarriors.png"
                 alt="project3"
                 class="portfolio__img"
+                onclick="onClick(this)"
               />
               <div class="portfolio__data">
-                <h3 class="portfolio__title">Advertising Web Platform</h3>
-                <p class="portfolio__description"></p>
+                <h3 class="portfolio__title">
+                  NFT Project - Angry Balkan Warriors
+                </h3>
+                <p class="portfolio__description">
+                  Frontend developed with ReactJS, website for upcoming cool NFT
+                  project on Solana blockchain.
+                </p>
 
+                <a href="#" target="_blank">
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View on GitHub
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/transport-mb - Transposrt and logistic company.png"
+                alt="project4"
+                class="portfolio__img"
+                onclick="onClick(this)"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Website - MBTransport</h3>
+                <p class="portfolio__description">
+                  Modern website which is build for cargo and logistics company
+                  in Germany.
+                </p>
                 <a
-                  href="https://github.com/Guzeloff/oglasi-frontend"
+                  href="https://github.com/Guzeloff/mb-transport"
                   target="_blank"
                 >
                   <span
-                    class="
-                      button button--flex button--small button--link
-                      services__button
-                    "
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View on GitHub
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/cvatransport.png"
+                alt="project4"
+                class="portfolio__img"
+                onclick="onClick(this)"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Website - CVA Transport Inc.</h3>
+                <p class="portfolio__description">
+                  Modern website which is build for cargo and logistics company
+                  in US.
+                </p>
+                <a href="#" target="_blank">
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View on GitHub
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div
+          id="modal01"
+          class="modal"
+          onclick="this.style.display='none'; closeModal()"
+        >
+          <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <div class="modal-content">
+            <img id="img01" style="max-width: 100%" />
+          </div>
+        </div>
+      </section>
+      <!--PORTFOLIO E-COMMERCE STORES-->
+      <section class="porftolio section" id="portfolio">
+        <h2 class="section__title">Portfolio | E-Commerce Stores</h2>
+        <span class="section__subtitle">Most recent works</span>
+
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper">
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/puppywebsite.png"
+                alt="project1"
+                class="portfolio__img"
+                onclick="onClick(this)"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">
+                  ChienenConfort - Shopify E-commerce Store for Pets Accessories
+                </h3>
+                <p class="portfolio__description">Pets Accessories store</p>
+                <a href="#" target="_blank">
+                  <span
+                    class="button button--flex button--small button--link services__button"
                   >
                     View more
                     <i class="uil uil-arrow-right button__icon"></i>
@@ -736,25 +770,45 @@
             </div>
             <div class="portfolio__content grid swiper-slide">
               <img
-                src="assets/img/kids-quiz.png"
-                alt="project4"
+                src="assets/img/buzzmobile - SHOP.png"
+                alt="project2"
                 class="portfolio__img"
+                onclick="onClick(this)"
               />
               <div class="portfolio__data">
-                <h3 class="portfolio__title">Kids Quiz Web App</h3>
-                <p class="portfolio__description">
-                  This app is intended for young children with autism. Through a
-                  quiz game they can learn how to behave in certain situations.
-                </p>
-                <a
-                  href="https://github.com/Guzeloff/kids-quiz-app"
-                  target="_blank"
-                >
+                <h3 class="portfolio__title">
+                  BuzzMobile Store - Shopify E-commerce Store for Mobile
+                  Accessories
+                </h3>
+                <p class="portfolio__description">BuzzMobile Store</p>
+                <a href="#">
                   <span
-                    class="
-                      button button--flex button--small button--link
-                      services__button
-                    "
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View more
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/slurpshop.png"
+                alt="project2"
+                class="portfolio__img"
+                onclick="onClick(this)"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">
+                  Slurp - Shopify E-commerce Store for Skin Care
+                </h3>
+                <p class="portfolio__description">
+                  Slurp - worked as a part of a team where we built v2 of this
+                  website
+                </p>
+                <a href="#">
+                  <span
+                    class="button button--flex button--small button--link services__button"
                   >
                     View more
                     <i class="uil uil-arrow-right button__icon"></i>
@@ -771,6 +825,16 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
+        <div
+          id="modal01"
+          class="modal"
+          onclick="this.style.display='none'; closeModal()"
+        >
+          <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <div class="modal-content">
+            <img id="img01" style="max-width: 100%" />
+          </div>
+        </div>
       </section>
       <!--project section contact-->
       <section class="project section">
@@ -780,7 +844,7 @@
               <h2 class="project__title">You have a new project?</h2>
               <p class="project__description">Let's talk about it</p>
               <a href="#contact" class="button button--flex button--white">
-                Contact me
+                Hire me
                 <i class="uil uil-message project__icon button__icon"></i>
               </a>
             </div>

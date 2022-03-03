@@ -187,3 +187,14 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  document.getElementById("body").style.overflowY = "hidden";
+}
+
+function closeModal() {
+  console.log("modal closed");
+  document.getElementById("body").style.overflow = "unset";
+}
