@@ -636,7 +636,7 @@ img {
   border-radius: 0.5rem;
   justify-self: center;
   width: auto;
-  height: 430px;
+  height: 450px;
 }
 
 .portfolio__title {
@@ -1033,7 +1033,7 @@ img {
     width: 450px;
   }
   .portfolio__img {
-    width: 320px;
+    width: auto;
   }
   .portfolio__content {
     align-items: center;
@@ -1130,6 +1130,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  height: 100%;
 }
 
 .modal-hover-opacity {
