@@ -247,8 +247,48 @@ img {
 }
 
 /* HOME */
+.home {
+  position: relative;
+  overflow: hidden;
+}
+.home__scene {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.home__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.95;
+}
+.home__glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.28;
+  mix-blend-mode: screen;
+}
+.home__glow--one {
+  width: 320px;
+  height: 320px;
+  top: 8%;
+  left: -8%;
+  background: radial-gradient(circle, rgba(124, 92, 255, 0.55) 0%, rgba(124, 92, 255, 0) 72%);
+}
+.home__glow--two {
+  width: 260px;
+  height: 260px;
+  right: -6%;
+  bottom: 12%;
+  background: radial-gradient(circle, rgba(0, 225, 255, 0.35) 0%, rgba(0, 225, 255, 0) 70%);
+}
 .home__container {
   gap: 1rem;
+  position: relative;
+  z-index: 1;
 }
 .home__content {
   grid-template-columns: 0.5fr 3fr;
@@ -270,12 +310,16 @@ img {
 .home__blob {
   width: 200px;
   fill: var(--first-color);
+  will-change: transform, filter;
+  filter: drop-shadow(0 24px 50px rgba(124, 92, 255, 0.2));
 }
 .home__blob-image {
   width: 250px;
 }
 .home__data {
   grid-column: 1/3;
+  position: relative;
+  z-index: 1;
 }
 .home__title {
   font-size: var(--big-font-size);
@@ -288,6 +332,21 @@ img {
 }
 .home__description {
   margin-bottom: var(--mb-2);
+}
+.home__social,
+.home__img,
+.home__data,
+.about__data,
+.skills__content,
+.qualification__data,
+.services__content,
+.portfolio__content,
+.project__data,
+.project__img,
+.contact__information,
+.contact__form,
+.footer__container {
+  will-change: transform, opacity;
 }
 .home__scroll {
   display: none;
@@ -364,6 +423,11 @@ img {
   justify-content: center;
   align-self: center;
   margin: 0 auto;
+}
+.about__data {
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
 }
 .about__description {
   text-align: center;
@@ -446,6 +510,17 @@ img {
 .skills__percentage {
   display: block;
   background-color: var(--first-color);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.skills__content.skills__animated .skills__percentage {
+  transform: scaleX(1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .skills__percentage {
+    transition: none;
+  }
 }
 .skills__html {
   width: 90%;
@@ -553,10 +628,13 @@ img {
   padding: 3.5rem 0.5rem 1.25rem 1.5rem;
   border-radius: 0.25rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-  transition: 0.3s;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  transform-style: preserve-3d;
+  border: 1px solid transparent;
 }
 .services__content:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+  border-color: rgba(124, 92, 255, 0.35);
 }
 .services__icon {
   display: block;
@@ -626,17 +704,58 @@ img {
 }
 
 /*portfolio */
+.portfolio__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: var(--mb-2);
+}
+.portfolio__tab {
+  border: 1px solid var(--first-color);
+  background-color: transparent;
+  color: var(--first-color);
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  transition: 0.3s;
+}
+.portfolio__tab:hover,
+.portfolio__tab--active {
+  background-color: var(--first-color);
+  color: #fff;
+}
+.portfolio__panel {
+  display: none;
+}
+.portfolio__panel--active {
+  display: block;
+  padding-bottom: 3rem;
+}
+.portfolio__note {
+  text-align: center;
+  color: var(--text-color-light);
+  font-size: var(--small-font-size);
+  margin-top: var(--mb-1-5);
+}
 .portfolio__container {
   overflow: initial;
 }
 .portfolio__content {
   padding: 0 1.5rem;
+  transform-style: preserve-3d;
 }
 .portfolio__img {
   border-radius: 0.5rem;
   justify-self: center;
   width: auto;
   height: 450px;
+  transition: transform 0.45s ease, filter 0.45s ease;
+}
+.portfolio__content:hover .portfolio__img {
+  transform: translateY(-8px) scale(1.015);
+  filter: saturate(1.05);
 }
 
 .portfolio__title {
@@ -679,6 +798,21 @@ img {
   outline: none;
 }
 
+@media screen and (max-width: 568px) {
+  .portfolio__tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home__glow--one {
+    width: 220px;
+    height: 220px;
+  }
+  .home__glow--two {
+    width: 180px;
+    height: 180px;
+  }
+}
+
 /*contact me project in mind */
 .project {
   text-align: center;
@@ -686,7 +820,10 @@ img {
 .project__bg {
   background-color: var(--first-color-second);
   padding-top: 3rem;
+  position: relative;
+  overflow: hidden;
 }
+
 .project__title {
   font-size: var(--h2-font-size);
   margin-bottom: var(--mb-0-75);
@@ -701,6 +838,9 @@ img {
 .project__img {
   width: 170px;
   justify-self: center;
+  transform-origin: center center;
+  filter: drop-shadow(0 22px 35px rgba(12, 8, 30, 0.28));
+  will-change: transform;
 }
 
 /*testimonials */
@@ -940,6 +1080,10 @@ img {
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .about__container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
   .qualification__sections {
     display: grid;
     grid-template-columns: 0.6fr;
@@ -1008,17 +1152,14 @@ img {
   .about__container {
     column-gap: 5rem;
   }
-  .about__img {
-    width: 350px;
-  }
   .about__description {
-    text-align: initial;
+    text-align: center;
   }
   .about__info {
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .about__buttons {
-    justify-content: initial;
+    justify-content: center;
   }
   .qualification__tabs {
     justify-content: center;
@@ -1177,4 +1318,55 @@ img {
   to {
     transform: scale(1);
   }
+}
+
+.skills__shopify {
+  width: 95%;
+}
+
+.skills__js {
+  width: 90%;
+}
+
+.skills__react,
+.skills__nextjs {
+  width: 85%;
+}
+
+.skills__html,
+.skills__css {
+  width: 90%;
+}
+
+.skills__tailwind,
+.skills__seo,
+.skills__ai,
+.skills__automation,
+.skills__uiux,
+.skills__api {
+  width: 85%;
+}
+
+.skills__node,
+.skills__express {
+  width: 80%;
+}
+
+.skills__mongodb,
+.skills__photoshop {
+  width: 75%;
+}
+
+.skills__theme {
+  width: 95%;
+}
+
+.skills__optimization,
+.skills__cro,
+.skills__chatbot {
+  width: 90%;
+}
+
+.skills__scraping {
+  width: 80%;
 }

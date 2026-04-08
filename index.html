@@ -28,7 +28,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="gjuzeloff" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="title" content="Angel G | Web Developer & Shopify Specialist" />
+    <meta name="title" content="Angel G | Full-Stack Developer (React, Next.js, Node.js) & Shopify Expert" />
     <meta
       name="description"
       content="Portfolio of Angel G, a web developer and Shopify specialist building fast, modern websites, e-commerce stores, and custom web applications."
@@ -101,6 +101,11 @@
     <main class="main">
       <!--HOME-->
       <section class="home section" id="home">
+        <div class="home__scene">
+          <canvas class="home__canvas" id="home-canvas"></canvas>
+          <div class="home__glow home__glow--one"></div>
+          <div class="home__glow home__glow--two"></div>
+        </div>
         <div class="home__container container grid">
           <div class="home__content grid">
             <div class="home__social">
@@ -143,8 +148,8 @@
                   />
                   <image
                     class="home__blob-image"
-                    x="-70"
-                    y="-17"
+                    x="-50"
+                    y="-45"
                     xlink:href="assets/img/me.png"
                   />
                 </g>
@@ -152,17 +157,17 @@
             </div>
             <div class="home__data">
               <h1 class="home__title">Hi! I'm Angel</h1>
-              <h3 class="home__subtitle">Web Developer | Shopify Specialist</h3>
+              <h3 class="home__subtitle">Full-Stack Developer (React, Next.js, Node.js) & Shopify Expert</h3>
               <p class="home__description">
-                #coding #doglover #snowboarding #gamer
+                coding • dogs • snowboarding • gaming
               </p>
-              <a href="#contact" class="button button--flex">
-               Let’s Talk<i class="uil uil-message button__icon"></i
-              ></a>
+              <a href="#portfolio" class="button button--flex">
+              Explore My Work<i class="uil uil-message button__icon"></i>
+              </a>
             </div>
           </div>
           <div class="home__scroll">
-            <a href="#about" class="home__scroll-button button--flex">
+            <a href="#skills" class="home__scroll-button button--flex">
               <i class="uil uil-mouse-alt home__scroll-mouse"></i>
               <span class="home__scroll-name">Scroll down</span>
               <i class="uil uil-arrow-down home__scroll-arrow"></i>
@@ -170,96 +175,56 @@
           </div>
         </div>
       </section>
-      <!--ABOUT-->
-      <section class="about section" id="about">
-        <h2 class="section__title">About Me</h2>
-        <span class="section__subtitle"> My introduction </span>
-
-        <div class="about__container container grid">
-          <img src="./assets/img/gjuzeloff2.jpg" alt="" class="about__img" />
-          <div class="about__data">
-            <p class="about__description">
-              I develop modern websites and e-commerce experiences designed to improve usability, performance, and conversions.
-            </p>
-            <div class="about__info">
-              <div>
-                <span class="about__info-title">08+</span>
-                <span class="about__info-name"
-                  >Years <br />
-                  experience</span
-                >
-              </div>
-              <div>
-                <span class="about__info-title">34+</span>
-                <span class="about__info-name"
-                  >Completed <br />
-                  projects</span
-                >
-              </div>
-              <div>
-                <span class="about__info-title">04</span>
-                <span class="about__info-name"
-                  >Companies <br />
-                  worked</span
-                >
-              </div>
-            </div>
-            <div class="about__buttons" style="display:none;">
-              <a
-                download="guzeloffCV"
-                href="assets/pdf/AngelGjuzelov_CV.pdf"
-                class="button button--flex"
-              >
-                Download CV<i class="uil uil-download-alt button__icon"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
       <!--SKILLS-->
+      <!-- SKILLS -->
       <section class="skills section" id="skills">
         <h2 class="section__title">Skills</h2>
-        <span class="section__subtitle"> My technical level </span>
+        <span class="section__subtitle">What I bring to the table</span>
+
         <div class="skills__container container grid">
           <div>
-            <!--SKILL1-->
-            <div class="skills__content skills__open">
+            <!-- SKILL 1 -->
+            <div class="skills__content skills__close">
               <div class="skills__header">
                 <i class="uil uil-brackets-curly skills__icon"></i>
                 <div>
-                  <h1 class="skills__title">Frontend developer</h1>
-                  <!-- <span class="skills__subtitle">More than 2 years</span> -->
+                  <h1 class="skills__title">Development</h1>
                 </div>
                 <i class="uil uil-angle-down skills__arrow"></i>
               </div>
+
               <div class="skills__list grid">
+
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Shopify</h3>
-                    <span class="skills__number">90%</span>
+                    <h3 class="skills__name">React</h3>
+                    <span class="skills__number">85%</span>
                   </div>
                   <div class="skills__bar">
                     <span class="skills__percentage skills__react"></span>
                   </div>
                 </div>
+
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">JavaScript</h3>
+                    <h3 class="skills__name">Next.js</h3>
                     <span class="skills__number">85%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__nextjs"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">JavaScript (ES6+)</h3>
+                    <span class="skills__number">90%</span>
                   </div>
                   <div class="skills__bar">
                     <span class="skills__percentage skills__js"></span>
                   </div>
                 </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">React</h3>
-                    <span class="skills__number">75%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__react"></span>
-                  </div>
-                </div>
+
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">HTML</h3>
@@ -269,125 +234,780 @@
                     <span class="skills__percentage skills__html"></span>
                   </div>
                 </div>
+
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">CSS</h3>
-                    <span class="skills__number">85%</span>
+                    <span class="skills__number">90%</span>
                   </div>
                   <div class="skills__bar">
                     <span class="skills__percentage skills__css"></span>
                   </div>
                 </div>
+
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">MaterialUI</h3>
-                    <span class="skills__number">65%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__materialUI"></span>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-          <div>
-            <!--SKILL2-->
-            <div class="skills__content skills__close">
-              <div class="skills__header">
-                <i class="uil uil-server-network skills__icon"></i>
-                <div>
-                  <h1 class="skills__title">Backend developer</h1>
-                  <!-- <span class="skills__subtitle">More than 1 year</span> -->
-                </div>
-                <i class="uil uil-angle-down skills__arrow"></i>
-              </div>
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Node.js</h3>
-                    <span class="skills__number">75%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__firebase"></span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">MongoDB</h3>
-                    <span class="skills__number">70%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__firebase"></span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Express</h3>
+                    <h3 class="skills__name">Tailwind CSS</h3>
                     <span class="skills__number">85%</span>
                   </div>
                   <div class="skills__bar">
-                    <span class="skills__percentage skills__firebase"></span>
+                    <span class="skills__percentage skills__tailwind"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Node.js</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__node"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Express.js</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__express"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">MongoDB</h3>
+                    <span class="skills__number">75%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__mongodb"></span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div>
-            <!--SKILL3-->
+            <!-- SKILL 2 -->
             <div class="skills__content skills__close">
               <div class="skills__header">
-                <i class="uil uil-swatchbook skills__icon"></i>
+                <i class="uil uil-shop skills__icon"></i>
                 <div>
-                  <h1 class="skills__title">Design</h1>
-                  <!-- <span class="skills__subtitle">More than 1 year</span> -->
+                  <h1 class="skills__title">eCommerce</h1>
                 </div>
                 <i class="uil uil-angle-down skills__arrow"></i>
               </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Shopify</h3>
+                    <span class="skills__number">95%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__shopify"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Theme Customization</h3>
+                    <span class="skills__number">95%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__theme"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Store Optimization</h3>
+                    <span class="skills__number">90%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__optimization"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">CRO</h3>
+                    <span class="skills__number">90%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__cro"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">SEO & Performance</h3>
+                    <span class="skills__number">85%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__seo"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">REST APIs & Integrations</h3>
+                    <span class="skills__number">85%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__api"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <!-- SKILL 3 -->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-robot skills__icon"></i>
+                <div>
+                  <h1 class="skills__title">AI & Automation</h1>
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">AI Integrations</h3>
+                    <span class="skills__number">85%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__ai"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">AI Chatbots & Tools</h3>
+                    <span class="skills__number">90%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__chatbot"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Automation Systems</h3>
+                    <span class="skills__number">85%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__automation"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Web Scraping</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__scraping"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <!-- SKILL 4 -->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-palette skills__icon"></i>
+                <div>
+                  <h1 class="skills__title">Creative</h1>
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
               <div class="skills__list grid">
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">Photoshop</h3>
-                    <span class="skills__number">85%</span>
+                    <span class="skills__number">80%</span>
                   </div>
                   <div class="skills__bar">
                     <span class="skills__percentage skills__photoshop"></span>
                   </div>
                 </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">UI / UX Thinking</h3>
+                    <span class="skills__number">85%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__uiux"></span>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <!--PORTFOLIO-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Selected work</span>
+
+        <div class="portfolio__tabs container">
+          <button
+            class="portfolio__tab portfolio__tab--active"
+            type="button"
+            data-portfolio-target="web"
+          >
+            Web Development
+          </button>
+          <button
+            class="portfolio__tab"
+            type="button"
+            data-portfolio-target="ecommerce"
+          >
+            E-Commerce Stores
+          </button>
+        </div>
+
+        <div
+          class="portfolio__panel portfolio__panel--active"
+          data-portfolio-content="web"
+        >
+          <div class="portfolio__container container swiper-container">
+            <div class="swiper-wrapper">
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/tripko.png"
+                alt="Tripko"
+                class="portfolio__img"
+                onclick="onClick(this)"
+                loading="lazy"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Tripko</h3>
+                <p class="portfolio__description">
+                  Travel marketplace where agencies can publish offers and users
+                  can easily discover and compare trips in one place.
+                </p>
+                <a href="#" target="_blank">
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View on GitHub
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/auditify.png"
+                alt="Auditify - Shopify Audit"
+                class="portfolio__img"
+                onclick="onClick(this)"
+                loading="lazy"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Auditify - Shopify Audit</h3>
+                <p class="portfolio__description">
+                  Auditify is an AI-powered Shopify audit tool that analyzes
+                  SEO, speed, and UX to uncover issues and help store owners
+                  increase conversions and performance.
+                </p>
+                <a href="#" target="_blank">
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View on GitHub
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/inventory.png"
+                alt="project4"
+                class="portfolio__img"
+                onclick="onClick(this)"
+                style="height: 200px;"
+                loading="lazy"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Inventory Manager</h3>
+                <p class="portfolio__description">
+                  Web-based inventory management system for tracking products, stock levels, and basic business operations.
+                </p>
+                <a href="#" target="_blank">
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View on GitHub
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/tesla.jpg"
+                alt="project4"
+                class="portfolio__img"
+                onclick="onClick(this)"
+                loading="lazy"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">TeslaLED - Signs</h3>
+                <p class="portfolio__description">
+                  Modern business website built for a LED signage company to showcase products, services, and attract new customers.
+                </p>
+                <a href="#" target="_blank">
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View on GitHub
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/vase.png"
+                alt="project4"
+                class="portfolio__img"
+                onclick="onClick(this)"
+                loading="lazy"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Vase Vrangaloska - Author</h3>
+                <p class="portfolio__description">
+                  Modern author website designed to present the book, story, and author identity with an immersive and readable experience.
+                </p>
+                <a href="#" target="_blank">
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View on GitHub
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/marketing-agencyv1.png"
+                alt="project4"
+                class="portfolio__img"
+                onclick="onClick(this)"
+                loading="lazy"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Website Agency - HiDigital v2</h3>
+                <p class="portfolio__description">
+                  Modern website which is build for a digital marketing agency.
+                </p>
+                <a href="#" target="_blank">
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View on GitHub
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="/assets/img/dijagonala.png"
+                alt="project4"
+                class="portfolio__img"
+                onclick="onClick(this)"
+                loading="lazy"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Static Website - Dijagonala</h3>
+                <p class="portfolio__description">
+                  Modern static website which is build for a sanitaryware and
+                  tiles shop.
+                </p>
+                <a href="#" target="_blank">
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View on GitHub
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/realtime-news.png"
+                alt="project4"
+                class="portfolio__img"
+                onclick="onClick(this)"
+                loading="lazy"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">
+                  RealTime News - newsapi.org - api
+                </h3>
+                <p class="portfolio__description">
+                  Search for news articles that mention a specific topic or
+                  keyword, language or country source
+                </p>
+                <a href="#" target="_blank">
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View on GitHub
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/findtutor.png"
+                alt="project1"
+                class="portfolio__img modal-hover-opacity"
+                onclick="onClick(this)"
+                loading="lazy"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Educational Web Platform</h3>
+                <p class="portfolio__description">
+                  Educational web platform where knowledge is offered and at the
+                  same time knowledge is sought, where students can find tutors
+                  depend on the subjects they want to learn about, and also
+                  asking questions for a specific category.
+                </p>
+                <a href="#" target="_blank">
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View on GitHub
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/godsofnileNFT.png"
+                alt="project2"
+                class="portfolio__img"
+                onclick="onClick(this)"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">NFT Project - Gods of Nile</h3>
+                <p class="portfolio__description">
+                  Frontend developed with ReactJS, website for upcoming cool NFT
+                  project on ETH blockchain.
+                </p>
+                <a href="#">
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View on GitHub
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/hidigital.png"
+                alt="project2"
+                class="portfolio__img"
+                onclick="onClick(this)"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Website - HiDigital</h3>
+                <p class="portfolio__description">
+                  Modern website which is build for a digital marketing agency.
+                </p>
+                <a href="#" target="_blank">
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View on GitHub
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/angrywarriors.png"
+                alt="project3"
+                class="portfolio__img"
+                onclick="onClick(this)"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">
+                  NFT Project - Angry Balkan Warriors
+                </h3>
+                <p class="portfolio__description">
+                  Frontend developed with ReactJS, website for upcoming cool NFT
+                  project on Solana blockchain.
+                </p>
+
+                <a href="#" target="_blank">
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View on GitHub
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/transport-mb - Transposrt and logistic company.png"
+                alt="project4"
+                class="portfolio__img"
+                onclick="onClick(this)"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Website - MBTransport</h3>
+                <p class="portfolio__description">
+                  Modern website which is build for cargo and logistics company
+                  in Germany.
+                </p>
+                <a href="#" target="_blank">
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View on GitHub
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/cvatransport.png"
+                alt="project4"
+                class="portfolio__img"
+                onclick="onClick(this)"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Website - CVA Transport Inc.</h3>
+                <p class="portfolio__description">
+                  Modern website which is build for cargo and logistics company
+                  in US.
+                </p>
+                <a href="#" target="_blank">
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View on GitHub
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            </div>
+            <div class="swiper-button-next">
+              <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div>
-            <div class="skills__content skills__close">
-              <div class="skills__header">
-                <i class="uil uil-megaphone skills__icon"></i>
-                <div>
-                  <h1 class="skills__title">Digital Marketing</h1>
-                  <!-- <span class="skills__subtitle">More than 1 year</span> -->
+        </div>
+
+        <div class="portfolio__panel" data-portfolio-content="ecommerce">
+          <div class="portfolio__container container swiper-container">
+            <div class="swiper-wrapper">
+              <div class="portfolio__content grid swiper-slide">
+                <img
+                  src="assets/img/sharing.png"
+                  alt="project2"
+                  class="portfolio__img"
+                  onclick="onClick(this)"
+                  loading="lazy"
+                />
+                <div class="portfolio__data">
+                  <h3 class="portfolio__title">
+                    Sharingbijoux - Jewelry & Accessories
+                  </h3>
+                  <p class="portfolio__description">
+                    Custom feature development, advanced product filtering,
+                    page speed & performance optimization
+                  </p>
+                  <a href="#" target="_blank">
+                    <span
+                      class="button button--flex button--small button--link services__button"
+                    >
+                      View more
+                      <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                  </a>
                 </div>
-                <i class="uil uil-angle-down skills__arrow"></i>
               </div>
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Facebook & Instagram Ads</h3>
-                    <span class="skills__number">90%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__ads"></span>
-                  </div>
+              <div class="portfolio__content grid swiper-slide">
+                <img
+                  src="assets/img/quick.png"
+                  alt="project2"
+                  class="portfolio__img"
+                  onclick="onClick(this)"
+                  loading="lazy"
+                />
+                <div class="portfolio__data">
+                  <h3 class="portfolio__title">
+                    Quick Fit Bites - Health & Wellness / Food & Beverage
+                  </h3>
+                  <p class="portfolio__description">
+                    SEO optimization and full e-commerce store development.
+                  </p>
+                  <a href="https://quickfitbites.com/" target="_blank">
+                    <span
+                      class="button button--flex button--small button--link services__button"
+                    >
+                      View more
+                      <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                  </a>
                 </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Social Media AI Chatbots</h3>
-                    <span class="skills__number">95%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__bot"></span>
-                  </div>
+              </div>
+              <div class="portfolio__content grid swiper-slide">
+                <img
+                  src="assets/img/buzzmobile - SHOP.png"
+                  alt="project2"
+                  class="portfolio__img"
+                  onclick="onClick(this)"
+                  loading="lazy"
+                />
+                <div class="portfolio__data">
+                  <h3 class="portfolio__title">
+                    BuzzMobile Store (LIVE) - E-commerce Store for Mobile
+                    Accessories
+                  </h3>
+                  <p class="portfolio__description">BuzzMobile Store</p>
+                  <a href="https://buzzmobile.mk/" target="_blank">
+                    <span
+                      class="button button--flex button--small button--link services__button"
+                    >
+                      View more
+                      <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio__content grid swiper-slide">
+                <img
+                  src="assets/img/keen.png"
+                  alt="project2"
+                  class="portfolio__img"
+                  onclick="onClick(this)"
+                  loading="lazy"
+                />
+                <div class="portfolio__data">
+                  <h3 class="portfolio__title">
+                    Kline Collective - Hand-painted Wall Art
+                  </h3>
+                  <p class="portfolio__description">
+                    SEO optimization combined with custom development and
+                    performance improvements.
+                  </p>
+                  <a href="#" target="_blank">
+                    <span
+                      class="button button--flex button--small button--link services__button"
+                    >
+                      View more
+                      <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio__content grid swiper-slide">
+                <img
+                  src="assets/img/puppywebsite.png"
+                  alt="project1"
+                  class="portfolio__img"
+                  onclick="onClick(this)"
+                  loading="lazy"
+                />
+                <div class="portfolio__data">
+                  <h3 class="portfolio__title">
+                    ChienenConfort - Shopify E-commerce Store for Pets
+                    Accessories
+                  </h3>
+                  <p class="portfolio__description">Pets Accessories store</p>
+                  <a href="#" target="_blank">
+                    <span
+                      class="button button--flex button--small button--link services__button"
+                    >
+                      View more
+                      <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio__content grid swiper-slide">
+                <img
+                  src="assets/img/slurpshop.png"
+                  alt="project2"
+                  class="portfolio__img"
+                  onclick="onClick(this)"
+                  loading="lazy"
+                />
+                <div class="portfolio__data">
+                  <h3 class="portfolio__title">
+                    Slurp - Shopify E-commerce Store for Skin Care
+                  </h3>
+                  <p class="portfolio__description">
+                    Slurp - worked as a part of a team where we built v2 of
+                    this website
+                  </p>
+                  <a href="#">
+                    <span
+                      class="button button--flex button--small button--link services__button"
+                    >
+                      View more
+                      <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
+            <div class="swiper-button-next">
+              <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <p class="portfolio__note">
+          Projects are private. Contact me if you'd like to review the code.
+        </p>
+
+        <div
+          id="modal01"
+          class="modal"
+          onclick="this.style.display='none'; closeModal()"
+        >
+          <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <div class="modal-content">
+            <img id="img01" style="max-width: 100%" />
           </div>
         </div>
       </section>
@@ -456,13 +1076,13 @@
               <div class="qualification__data">
                 <div>
                   <h3 class="qualification__title">
-                    Freelance Frontend Developer and Digital Marketer
+                   Freelance Full-Stack & Shopify Developer (Upwork)
                   </h3>
                   <div class="qualification__calendar">
                     <i
                       class="uil uil-calendar-alt qualification__calendar__icon"
                     ></i>
-                    2019-2022(May)
+                    2019- Present
                   </div>
                 </div>
                 <div>
@@ -495,8 +1115,59 @@
           </div>
         </div>
       </section>
+      <!--ABOUT-->
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle"> My introduction </span>
+
+        <div class="about__container container grid">
+          <div class="about__data">
+            <p class="about__description">
+             I’m a Full-Stack Developer, Shopify & AI Engineer with 8+ years of experience.
+            </p>
+            <p class="about__description">
+              I build fast, scalable, and conversion-focused web apps and eCommerce platforms using React, Next.js, and Shopify, optimized for performance, SEO, and real results.
+            </p>
+            <p class="about__description">
+              I also create AI-powered solutions and automation systems that help businesses grow and operate more efficiently.
+            </p>
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">08+</span>
+                <span class="about__info-name"
+                  >Years <br />
+                  experience</span
+                >
+              </div>
+              <div>
+                <span class="about__info-title">34+</span>
+                <span class="about__info-name"
+                  >Completed <br />
+                  projects</span
+                >
+              </div>
+              <div>
+                <span class="about__info-title">04</span>
+                <span class="about__info-name"
+                  >Companies <br />
+                  worked</span
+                >
+              </div>
+            </div>
+            <div class="about__buttons" style="display:none;">
+              <a
+                download="guzeloffCV"
+                href="assets/pdf/AngelGjuzelov_CV.pdf"
+                class="button button--flex"
+              >
+                Download CV<i class="uil uil-download-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
       <!--SERVICES-->
-      <section class="services section" id="services">
+      <section class="services section" id="services" style="display:none;">
         <h2 class="section__title serv">Services</h2>
         <span
           style="margin: auto; display: table; margin-bottom: 3rem"
@@ -576,512 +1247,6 @@
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <!--PORTFOLIO E-COMMERCE STORES-->
-      <section class="porftolio section" id="portfolio">
-        <h2 class="section__title">Portfolio | E-Commerce Stores</h2>
-        <span class="section__subtitle">Most recent works</span>
-
-        <div class="portfolio__container container swiper-container">
-          <div class="swiper-wrapper">
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/sharing.png"
-                alt="project2"
-                class="portfolio__img"
-                onclick="onClick(this)"
-                loading="lazy"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">
-                  Sharingbijoux - Jewelry & Accessories
-                </h3>
-                <p class="portfolio__description">Custom feature development, advanced product filtering, page speed & performance optimization </p>
-                <a href="#" target="_blank">
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View more
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/quick.png"
-                alt="project2"
-                class="portfolio__img"
-                onclick="onClick(this)"
-                loading="lazy"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">
-                  Quick Fit Bites - Health & Wellness / Food & Beverage
-                </h3>
-                <p class="portfolio__description">SEO optimization and full e-commerce store development.</p>
-                <a href="https://quickfitbites.com/" target="_blank">
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View more
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/buzzmobile - SHOP.png"
-                alt="project2"
-                class="portfolio__img"
-                onclick="onClick(this)"
-                loading="lazy"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">
-                  BuzzMobile Store (LIVE) - E-commerce Store for Mobile
-                  Accessories
-                </h3>
-                <p class="portfolio__description">BuzzMobile Store</p>
-                <a href="https://buzzmobile.mk/" target="_blank">
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View more
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/keen.png"
-                alt="project2"
-                class="portfolio__img"
-                onclick="onClick(this)"
-                loading="lazy"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">
-                  Kline Collective - Hand-painted Wall Art
-                </h3>
-                <p class="portfolio__description">SEO optimization combined with custom development and performance improvements.</p>
-                <a href="#" target="_blank">
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View more
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/puppywebsite.png"
-                alt="project1"
-                class="portfolio__img"
-                onclick="onClick(this)"
-                loading="lazy"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">
-                  ChienenConfort - Shopify E-commerce Store for Pets Accessories
-                </h3>
-                <p class="portfolio__description">Pets Accessories store</p>
-                <a href="#" target="_blank">
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View more
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/slurpshop.png"
-                alt="project2"
-                class="portfolio__img"
-                onclick="onClick(this)"
-                loading="lazy"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">
-                  Slurp - Shopify E-commerce Store for Skin Care
-                </h3>
-                <p class="portfolio__description">
-                  Slurp - worked as a part of a team where we built v2 of this
-                  website
-                </p>
-                <a href="#">
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View more
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-next">
-            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-          </div>
-          <div class="swiper-button-prev">
-            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-        <div
-          id="modal01"
-          class="modal"
-          onclick="this.style.display='none'; closeModal()"
-        >
-          <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-          <div class="modal-content">
-            <img id="img01" style="max-width: 100%" />
-          </div>
-        </div>
-      </section>
-      <!--PORTFOLIO-->
-      <section class="porftolio section" id="portfolio">
-        <h2 class="section__title">Portfolio | Web Development</h2>
-        <span class="section__subtitle">Most recent works</span>
-        <span
-          class="section__subtitle"
-          style="font-style: italic; margin-top: 0"
-          >click on image to view</span
-        >
-
-        <div class="portfolio__container container swiper-container">
-          <div class="swiper-wrapper">
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/tesla.jpg"
-                alt="project4"
-                class="portfolio__img"
-                onclick="onClick(this)"
-                loading="lazy"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">TeslaLED - Signs</h3>
-                <p class="portfolio__description">
-                  Modern business website built for a LED signage company to showcase products, services, and attract new customers.
-                </p>
-                <a href="#" target="_blank">
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View on GitHub
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/inventory.png"
-                alt="project4"
-                class="portfolio__img"
-                onclick="onClick(this)"
-                style="height: 200px;"
-                loading="lazy"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Inventory Manager</h3>
-                <p class="portfolio__description">
-                  Web-based inventory management system for tracking products, stock levels, and basic business operations.
-                </p>
-                <a href="#" target="_blank">
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View on GitHub
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/vase.png"
-                alt="project4"
-                class="portfolio__img"
-                onclick="onClick(this)"
-                loading="lazy"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Vase Vrangaloska - Author</h3>
-                <p class="portfolio__description">
-                  Modern author website designed to present the book, story, and author identity with an immersive and readable experience.
-                </p>
-                <a href="#" target="_blank">
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View on GitHub
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/marketing-agencyv1.png"
-                alt="project4"
-                class="portfolio__img"
-                onclick="onClick(this)"
-                loading="lazy"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Website Agency - HiDigital v2</h3>
-                <p class="portfolio__description">
-                  Modern website which is build for a digital marketing agency.
-                </p>
-                <a href="#" target="_blank">
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View on GitHub
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="/assets/img/dijagonala.png"
-                alt="project4"
-                class="portfolio__img"
-                onclick="onClick(this)"
-                loading="lazy"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Static Website - Dijagonala</h3>
-                <p class="portfolio__description">
-                  Modern static website which is build for a sanitaryware and
-                  tiles shop.
-                </p>
-                <a
-                  href="https://github.com/Guzeloff/dijagonala-page"
-                  target="_blank"
-                >
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View on GitHub
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/realtime-news.png"
-                alt="project4"
-                class="portfolio__img"
-                onclick="onClick(this)"
-                loading="lazy"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">
-                  RealTime News - newsapi.org - api
-                </h3>
-                <p class="portfolio__description">
-                  Search for news articles that mention a specific topic or
-                  keyword, language or country source
-                </p>
-                <a
-                  href="https://github.com/Guzeloff/realtime-news-app"
-                  target="_blank"
-                >
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View on GitHub
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/findtutor.png"
-                alt="project1"
-                class="portfolio__img modal-hover-opacity"
-                onclick="onClick(this)"
-                loading="lazy"
-              />
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Educational Web Platform</h3>
-                <p class="portfolio__description">
-                  Educational web platform where knowledge is offered and at the
-                  same time knowledge is sought, where students can find tutors
-                  depend on the subjects they want to learn about, and also
-                  asking questions for a specific category.
-                </p>
-                <a
-                  href="https://github.com/Guzeloff/findtutor-studybuddy"
-                  target="_blank"
-                >
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View on GitHub
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/godsofnileNFT.png"
-                alt="project2"
-                class="portfolio__img"
-                onclick="onClick(this)"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">NFT Project - Gods of Nile</h3>
-                <p class="portfolio__description">
-                  Frontend developed with ReactJS, website for upcoming cool NFT
-                  project on ETH blockchain.
-                </p>
-                <a href="#">
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View on GitHub
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/hidigital.png"
-                alt="project2"
-                class="portfolio__img"
-                onclick="onClick(this)"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Website - HiDigital</h3>
-                <p class="portfolio__description">
-                  Modern website which is build for a digital marketing agency.
-                </p>
-                <a
-                  href="https://github.com/Guzeloff/MarketingAgency-Digitaless"
-                  target="_blank"
-                >
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View on GitHub
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/angrywarriors.png"
-                alt="project3"
-                class="portfolio__img"
-                onclick="onClick(this)"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">
-                  NFT Project - Angry Balkan Warriors
-                </h3>
-                <p class="portfolio__description">
-                  Frontend developed with ReactJS, website for upcoming cool NFT
-                  project on Solana blockchain.
-                </p>
-
-                <a href="#" target="_blank">
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View on GitHub
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/transport-mb - Transposrt and logistic company.png"
-                alt="project4"
-                class="portfolio__img"
-                onclick="onClick(this)"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Website - MBTransport</h3>
-                <p class="portfolio__description">
-                  Modern website which is build for cargo and logistics company
-                  in Germany.
-                </p>
-                <a
-                  href="https://github.com/Guzeloff/mb-transport"
-                  target="_blank"
-                >
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View on GitHub
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/cvatransport.png"
-                alt="project4"
-                class="portfolio__img"
-                onclick="onClick(this)"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Website - CVA Transport Inc.</h3>
-                <p class="portfolio__description">
-                  Modern website which is build for cargo and logistics company
-                  in US.
-                </p>
-                <a href="#" target="_blank">
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View on GitHub
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-next">
-            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-          </div>
-          <div class="swiper-button-prev">
-            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-        <div
-          id="modal01"
-          class="modal"
-          onclick="this.style.display='none'; closeModal()"
-        >
-          <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-          <div class="modal-content">
-            <img id="img01" style="max-width: 100%" />
           </div>
         </div>
       </section>
@@ -1225,6 +1390,9 @@
       </a>
     </main>
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r155/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
