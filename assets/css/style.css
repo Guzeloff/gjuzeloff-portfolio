@@ -50,7 +50,7 @@ h1,h2 { margin:0; font-family:"Space Grotesk",Arial,sans-serif; font-weight:700;
 .tech-list li { padding:7px 10px; border:1px solid rgba(255,255,255,.2); border-radius:999px; color:#d1d1cf; font:.61rem/1 "DM Mono",monospace; transition:transform .2s,border-color .2s,color .2s; }
 .portrait-frame { position:relative; width:min(100%,330px); aspect-ratio:1; justify-self:end; align-self:end; overflow:hidden; border:1px solid rgba(255,255,255,.28); background:radial-gradient(circle at 55% 42%,#414141,#171717 68%); box-shadow:18px 18px 0 rgba(200,255,61,.16); transition:transform .45s cubic-bezier(.2,.75,.2,1),box-shadow .45s; }
 .portrait-frame::before { position:absolute; z-index:3; inset:12px; border:1px solid rgba(255,255,255,.16); content:""; pointer-events:none; }
-.portrait-frame img { position:absolute; z-index:2; inset:auto -9% -10%; width:118%; height:118%; object-fit:contain; object-position:center bottom; filter:grayscale(1) contrast(1.12); }
+.portrait-frame img { position:absolute; z-index:2; inset:auto 0% -10%; width:118%; height:118%; object-fit:contain; object-position:center bottom; filter:grayscale(1) contrast(1.12); }
 .portrait-grid { position:absolute; inset:0; background:linear-gradient(135deg,transparent 42%,rgba(200,255,61,.28)),repeating-linear-gradient(90deg,transparent 0 38px,rgba(255,255,255,.09) 39px 40px); }
 .portrait-orb { position:absolute; z-index:1; border-radius:50%; filter:blur(2px); }
 .orb-one { bottom:-22px; left:-38px; width:155px; height:155px; background:radial-gradient(circle at 34% 28%,#f2f6b2,var(--lime) 26%,#7ba12d 58%,transparent 60%); }
