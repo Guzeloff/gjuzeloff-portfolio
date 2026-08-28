@@ -26,7 +26,7 @@ if (year) year.textContent = new Date().getFullYear();
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const revealTargets = document.querySelectorAll(
-  '.section-heading-row, .about-layout, .stat-grid, .capability-card, .experience-item, .project-card, .commerce-tile, .contact-layout'
+  '.section-heading-row, .about-rail, .about-intro, .about-details, .capability-card, .project-card, .commerce-tile, .contact-layout'
 );
 
 if (!prefersReducedMotion.matches && 'IntersectionObserver' in window) {
